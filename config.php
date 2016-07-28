@@ -6,10 +6,10 @@
  * Time: 11:24
  */
 
-define('CJJ_CONFIG_WEB_FTP_STATUS',false);
+define('CJJ_CONFIG_WEB_FTP_STATUS',true);
 define('CJJ_CONFIG_WEB_FTP_HOST','120.24.230.251');
-define('CJJ_CONFIG_WEB_FTP_USER','xxxx');
-define('CJJ_CONFIG_WEB_FTP_PASSWORD','xxx');
+define('CJJ_CONFIG_WEB_FTP_USER','wxb_ftp');
+define('CJJ_CONFIG_WEB_FTP_PASSWORD','wxb820531');
 define('CJJ_CONFIG_WEB_FTP_PORT',21);
 define('CJJ_CONFIG_WEB_FTP_PASV',true);
 define('CJJ_CONFIG_WEB_FTP_SSL',false);
