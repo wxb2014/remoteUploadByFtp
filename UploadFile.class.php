@@ -87,8 +87,8 @@ class UploadFile {//类定义开始
     public function __construct($config = ['maxSize'=> '','allowExts' => '','allowTypes' => '','savePath' => '','saveRule' => '']) {
         extract($config);
 		if (CJJ_CONFIG_WEB_FTP_STATUS ) {
-            require_once 'Ftp.class.php';
-            $this->Ftp = new Ftp();
+            require_once 'remoteUpload.class.php';
+            $this->Ftp = remoteUploadFactory::getInstance('Ftp');
             $this->Ftpstatus = 1;
 			//初始化FTP
 			$ftpdata = array(

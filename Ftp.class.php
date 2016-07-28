@@ -109,7 +109,7 @@ class Ftp {
             $this->mkdir($dirname);
         }
 
-        if (ftp_put($this->link, $remote, $local, $this->mode)) {
+        if (@ftp_put($this->link, $remote, $local, $this->mode)) {
             return true;
         } else {
             $this->err_code = 7;
