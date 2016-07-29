@@ -88,7 +88,7 @@ class UploadFile {//类定义开始
         extract($config);
 		if (CJJ_CONFIG_WEB_FTP_STATUS ) {
             require_once 'remoteUploadFactory.class.php';
-            $this->Ftp = remoteUploadFactory::getInstance('Ftp');
+            $this->Ftp = remoteUploadFactory::getInstance('sftp');
             $this->Ftpstatus = 1;
 			//初始化FTP
 			$ftpdata = array(
@@ -167,7 +167,7 @@ class UploadFile {//类定义开始
         	$fun =  $this->hashType;
         	$file['hash']   =  $fun($this->autoCharset($filename,'utf-8','gbk'));
         }
-        
+
         if($this->thumb && in_array(strtolower($file['extension']),array('gif','jpg','jpeg','bmp','png'))) {
             $image =  getimagesize($filename);
             if(false !== $image) {

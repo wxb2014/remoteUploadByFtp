@@ -1,4 +1,5 @@
 <?php
+//************************************************************
 require_once 'config.php';
 require_once 'UploadFile.class.php';
 $config = ['maxSize'=> '1*1024*1024','allowExts' => '','allowTypes' => '','savePath' => './pic/','saveRule' => 'uniqid'];

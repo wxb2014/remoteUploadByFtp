@@ -8,8 +8,8 @@
 // +----------------------------------------------------------------------
 // | Author: pengyong <i@pengyong.info>
 // +----------------------------------------------------------------------
-
-class Ftp {
+require_once 'remoteUploadInterface.class.php';
+class Ftp implements remoteUploadInterface{
         
     //FTP 连接资源
     private $link;
